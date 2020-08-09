@@ -13,20 +13,9 @@ def long_planeteer_calls(calls)
   calls.any? { |call| call.length > 4 }
 end
 
-#def find_the_cheese(strings)
-  #cheese_types = ["cheddar", "gouda", "camembert"]
-   #strings.find do |string|
-     #string.include?("#{cheese_types}")
-   #end
-#  end
 def find_the_cheese(strings)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  result = strings.include?("#{cheese_types}")
-  if result == true
-     strings.find do |string|
-      string.include?("#{cheese_types}")
-    else
-    nil
-  end
-end
-end 
+   strings.find do |string|
+     string.include?("#{cheese_types}")
+   end
+ end
